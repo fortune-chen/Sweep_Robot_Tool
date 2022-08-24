@@ -35,18 +35,169 @@
   <property name="autoFillBackground">
    <bool>true</bool>
   </property>
-  <layout class="QHBoxLayout" name="horizontalLayout_3">
+  <layout class="QHBoxLayout" name="horizontalLayout_5">
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
      <item>
-      <widget class="map" name="formWidget" native="true">
-       <property name="minimumSize">
-        <size>
-         <width>787</width>
-         <height>770</height>
-        </size>
-       </property>
-      </widget>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="map" name="formWidget" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>820</width>
+           <height>770</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1,1,1,1">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>5</number>
+         </property>
+         <property name="rightMargin">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="btn_clear_map">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>清空地图</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_save_map">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>保存地图</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_test_add_map_points">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>测试添加地图点</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="m_label_coord">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>(x, y) : (0, 0)</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_focus_map">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>150</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>回到原点</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
      </item>
      <item>
       <layout class="QVBoxLayout" name="v2_settings">
@@ -102,12 +253,18 @@
            <number>0</number>
           </property>
           <item row="0" column="0">
-           <layout class="QGridLayout" name="gridLayout_11" columnminimumwidth="1,1,1,0">
+           <layout class="QGridLayout" name="gridLayout_11" columnminimumwidth="1,1,1,1">
             <property name="leftMargin">
              <number>0</number>
             </property>
             <property name="rightMargin">
              <number>0</number>
+            </property>
+            <property name="horizontalSpacing">
+             <number>10</number>
+            </property>
+            <property name="verticalSpacing">
+             <number>6</number>
             </property>
             <item row="0" column="0">
              <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -124,7 +281,7 @@
                <number>9</number>
               </property>
               <property name="rightMargin">
-               <number>9</number>
+               <number>5</number>
               </property>
               <property name="bottomMargin">
                <number>9</number>
@@ -137,9 +294,15 @@
                   <verstretch>0</verstretch>
                  </sizepolicy>
                 </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>0</height>
+                 </size>
+                </property>
                 <property name="font">
                  <font>
-                  <family>72</family>
+                  <family>Calibri</family>
                   <pointsize>9</pointsize>
                  </font>
                 </property>
@@ -158,9 +321,15 @@
                 </property>
                 <property name="minimumSize">
                  <size>
-                  <width>90</width>
+                  <width>153</width>
                   <height>35</height>
                  </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Calibri</family>
+                  <pointsize>10</pointsize>
+                 </font>
                 </property>
                 <item>
                  <property name="text">
@@ -251,8 +420,8 @@
                        </property>
                        <property name="font">
                         <font>
-                         <family>72</family>
-                         <pointsize>9</pointsize>
+                         <family>Calibri</family>
+                         <pointsize>10</pointsize>
                          <weight>50</weight>
                          <bold>false</bold>
                         </font>
@@ -278,8 +447,8 @@
                        </property>
                        <property name="font">
                         <font>
-                         <family>72</family>
-                         <pointsize>9</pointsize>
+                         <family>Calibri</family>
+                         <pointsize>10</pointsize>
                          <weight>50</weight>
                          <bold>false</bold>
                         </font>
@@ -303,6 +472,12 @@
                          <height>35</height>
                         </size>
                        </property>
+                       <property name="font">
+                        <font>
+                         <family>Calibri</family>
+                         <pointsize>10</pointsize>
+                        </font>
+                       </property>
                        <property name="text">
                         <string>8888</string>
                        </property>
@@ -321,6 +496,12 @@
                          <width>70</width>
                          <height>35</height>
                         </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Calibri</family>
+                         <pointsize>10</pointsize>
+                        </font>
                        </property>
                        <property name="text">
                         <string>192.168.4.1</string>
@@ -362,8 +543,8 @@
                        </property>
                        <property name="font">
                         <font>
-                         <family>72</family>
-                         <pointsize>9</pointsize>
+                         <family>Calibri</family>
+                         <pointsize>10</pointsize>
                          <weight>50</weight>
                          <bold>false</bold>
                         </font>
@@ -389,8 +570,8 @@
                        </property>
                        <property name="font">
                         <font>
-                         <family>72</family>
-                         <pointsize>9</pointsize>
+                         <family>Calibri</family>
+                         <pointsize>10</pointsize>
                          <weight>50</weight>
                          <bold>false</bold>
                         </font>
@@ -433,7 +614,7 @@
                 </property>
                 <property name="minimumSize">
                  <size>
-                  <width>200</width>
+                  <width>156</width>
                   <height>0</height>
                  </size>
                 </property>
@@ -460,13 +641,13 @@
                   <number>5</number>
                  </property>
                  <property name="rightMargin">
-                  <number>10</number>
+                  <number>5</number>
                  </property>
                  <property name="bottomMargin">
                   <number>5</number>
                  </property>
                  <property name="horizontalSpacing">
-                  <number>0</number>
+                  <number>1</number>
                  </property>
                  <property name="verticalSpacing">
                   <number>5</number>
@@ -487,6 +668,12 @@
                      <width>0</width>
                      <height>40</height>
                     </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Calibri</family>
+                     <pointsize>10</pointsize>
+                    </font>
                    </property>
                    <property name="text">
                     <string>打开串口</string>
@@ -521,7 +708,7 @@
                     <number>0</number>
                    </property>
                    <property name="horizontalSpacing">
-                    <number>0</number>
+                    <number>9</number>
                    </property>
                    <property name="verticalSpacing">
                     <number>8</number>
@@ -539,6 +726,12 @@
                        <width>50</width>
                        <height>0</height>
                       </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Calibri</family>
+                       <pointsize>10</pointsize>
+                      </font>
                      </property>
                      <property name="text">
                       <string>波特率</string>
@@ -565,6 +758,12 @@
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="font">
+                      <font>
+                       <family>Calibri</family>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
                     </widget>
                    </item>
                    <item row="3" column="0">
@@ -580,6 +779,12 @@
                        <width>50</width>
                        <height>0</height>
                       </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Calibri</family>
+                       <pointsize>10</pointsize>
+                      </font>
                      </property>
                      <property name="text">
                       <string>校验位</string>
@@ -599,6 +804,12 @@
                        <width>50</width>
                        <height>0</height>
                       </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Calibri</family>
+                       <pointsize>10</pointsize>
+                      </font>
                      </property>
                      <property name="text">
                       <string>停止位</string>
@@ -625,6 +836,12 @@
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="font">
+                      <font>
+                       <family>Calibri</family>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
                     </widget>
                    </item>
                    <item row="2" column="0">
@@ -640,6 +857,12 @@
                        <width>50</width>
                        <height>0</height>
                       </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Calibri</family>
+                       <pointsize>10</pointsize>
+                      </font>
                      </property>
                      <property name="text">
                       <string>数据位</string>
@@ -666,6 +889,12 @@
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="font">
+                      <font>
+                       <family>Calibri</family>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
                     </widget>
                    </item>
                    <item row="0" column="0">
@@ -681,6 +910,12 @@
                        <width>50</width>
                        <height>0</height>
                       </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Calibri</family>
+                       <pointsize>10</pointsize>
+                      </font>
                      </property>
                      <property name="text">
                       <string>串  口</string>
@@ -707,6 +942,12 @@
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="font">
+                      <font>
+                       <family>Calibri</family>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
                     </widget>
                    </item>
                    <item row="0" column="1">
@@ -729,6 +970,12 @@
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="font">
+                      <font>
+                       <family>Calibri</family>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
                     </widget>
                    </item>
                   </layout>
@@ -748,7 +995,7 @@
               </property>
               <property name="minimumSize">
                <size>
-                <width>180</width>
+                <width>205</width>
                 <height>0</height>
                </size>
               </property>
@@ -760,7 +1007,7 @@
               </property>
               <property name="font">
                <font>
-                <family>72</family>
+                <family>Calibri</family>
                 <pointsize>9</pointsize>
                </font>
               </property>
@@ -814,6 +1061,12 @@
                      <height>40</height>
                     </size>
                    </property>
+                   <property name="font">
+                    <font>
+                     <family>Calibri</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>Forward</string>
                    </property>
@@ -832,6 +1085,12 @@
                      <width>0</width>
                      <height>40</height>
                     </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Calibri</family>
+                     <pointsize>10</pointsize>
+                    </font>
                    </property>
                    <property name="text">
                     <string>Backward</string>
@@ -852,6 +1111,12 @@
                      <height>40</height>
                     </size>
                    </property>
+                   <property name="font">
+                    <font>
+                     <family>Calibri</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>Left Rotate</string>
                    </property>
@@ -870,6 +1135,12 @@
                      <width>0</width>
                      <height>40</height>
                     </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Calibri</family>
+                     <pointsize>10</pointsize>
+                    </font>
                    </property>
                    <property name="text">
                     <string>Right Rotate</string>
@@ -899,8 +1170,8 @@
                   <widget class="QLabel" name="label_10">
                    <property name="font">
                     <font>
-                     <family>72</family>
-                     <pointsize>9</pointsize>
+                     <family>Calibri</family>
+                     <pointsize>10</pointsize>
                     </font>
                    </property>
                    <property name="text">
@@ -943,8 +1214,8 @@
                   <widget class="QLabel" name="label_11">
                    <property name="font">
                     <font>
-                     <family>72</family>
-                     <pointsize>9</pointsize>
+                     <family>Calibri</family>
+                     <pointsize>10</pointsize>
                     </font>
                    </property>
                    <property name="text">
@@ -1008,7 +1279,7 @@
               </property>
               <property name="minimumSize">
                <size>
-                <width>180</width>
+                <width>205</width>
                 <height>0</height>
                </size>
               </property>
@@ -1020,7 +1291,7 @@
               </property>
               <property name="font">
                <font>
-                <family>72</family>
+                <family>Calibri</family>
                 <pointsize>9</pointsize>
                </font>
               </property>
@@ -1086,6 +1357,12 @@
                      <height>16777215</height>
                     </size>
                    </property>
+                   <property name="font">
+                    <font>
+                     <family>Calibri</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>Auto Mode</string>
                    </property>
@@ -1113,8 +1390,8 @@
                    </property>
                    <property name="font">
                     <font>
-                     <family>72</family>
-                     <pointsize>9</pointsize>
+                     <family>Calibri</family>
+                     <pointsize>10</pointsize>
                      <weight>50</weight>
                      <bold>false</bold>
                     </font>
@@ -1144,6 +1421,12 @@
                      <height>16777215</height>
                     </size>
                    </property>
+                   <property name="font">
+                    <font>
+                     <family>Calibri</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>Home</string>
                    </property>
@@ -1168,6 +1451,12 @@
                      <width>240</width>
                      <height>16777215</height>
                     </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Calibri</family>
+                     <pointsize>10</pointsize>
+                    </font>
                    </property>
                    <property name="text">
                     <string>Random Mode</string>
@@ -1194,6 +1483,12 @@
                      <height>16777215</height>
                     </size>
                    </property>
+                   <property name="font">
+                    <font>
+                     <family>Calibri</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>Edge Mode</string>
                    </property>
@@ -1218,6 +1513,12 @@
                      <width>240</width>
                      <height>16777215</height>
                     </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Calibri</family>
+                     <pointsize>10</pointsize>
+                    </font>
                    </property>
                    <property name="text">
                     <string>Spiral Mode</string>
@@ -1244,6 +1545,12 @@
                      <height>16777215</height>
                     </size>
                    </property>
+                   <property name="font">
+                    <font>
+                     <family>Calibri</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>Square Spiral</string>
                    </property>
@@ -1268,6 +1575,12 @@
                      <width>240</width>
                      <height>16777215</height>
                     </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Calibri</family>
+                     <pointsize>10</pointsize>
+                    </font>
                    </property>
                    <property name="text">
                     <string>Y-Move</string>
@@ -1430,6 +1743,12 @@
                   <height>40</height>
                  </size>
                 </property>
+                <property name="font">
+                 <font>
+                  <family>Calibri</family>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
                 <property name="text">
                  <string>保存日志</string>
                 </property>
@@ -1445,7 +1764,7 @@
                 </property>
                 <property name="sizeHint" stdset="0">
                  <size>
-                  <width>80</width>
+                  <width>100</width>
                   <height>20</height>
                  </size>
                 </property>
@@ -1464,6 +1783,12 @@
                   <width>0</width>
                   <height>40</height>
                  </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Calibri</family>
+                  <pointsize>10</pointsize>
+                 </font>
                 </property>
                 <property name="text">
                  <string>清空日志</string>
