@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/clean.png</file>
+        <file>image/goal.png</file>
+        <file>image/plan_clean.png</file>
+        <file>image/point.png</file>
+        <file>image/robot.png</file>
+        <file>image/software.png</file>
+        <file>image/wall.png</file>
+        <file>image/wall_new.png</file>
+        <file>image/charge.png</file>
+    </qresource>
+</RCC>
