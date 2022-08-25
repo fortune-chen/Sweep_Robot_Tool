@@ -1,5 +1,6 @@
 #include "map.h"
 #include "ui_map.h"
+#include <QDebug>
 
 map::map(QWidget *parent) :
     QWidget(parent),
@@ -22,6 +23,8 @@ void map::paintEvent(QPaintEvent *event)
 //        PainterToImage();
 //        m_flag_save_image = false;
 //    }
+
+    qDebug() << "刷新地图";
 }
 
 void map::DrawItems()
